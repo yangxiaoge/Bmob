@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sample.wmz.bmob.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="your name"
+        android:paddingLeft="10dp"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp"
+        android:layout_alignRight="@+id/sex"
+        android:layout_alignEnd="@+id/sex" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="your sex"
+        android:paddingLeft="10dp"
+        android:id="@+id/sex"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:onClick="saveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传"
+        android:id="@+id/save_profile"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:onClick="queryAllProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询所有"
+        android:id="@+id/query_all_profile"
+        android:layout_below="@+id/save_profile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:onClick="queryProfileByName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通过姓名查询"
+        android:id="@+id/query_profile_by_name"
+        android:layout_below="@+id/query_all_profile"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="bmobPush"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推送"
+        android:id="@+id/bmob_push"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
