@@ -166,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void bmobPush(View view) {
         BmobPushManager push = new BmobPushManager(MainActivity.this);
-        push.pushMessage("我是一个测试push");
+        int i = (int) Math.round(Math.random() * 100);
+        push.pushMessage("我是一个测试push-->"+ i );
     }
 }
